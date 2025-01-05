@@ -96,7 +96,8 @@ function App() {
 
   return (
     <div  className="min-h-screen flex flex-col lg:flex-row text-white bg-cover bg-center"
-    style={{ backgroundImage: "url('/image.png')" }}
+    style={{
+      backgroundImage: `url(${process.env.PUBLIC_URL}/image.png)`,
     >
       {/* Left Section */}
       <div className="lg:w-2/3 flex flex-col items-center justify-center px-4 py-8">
