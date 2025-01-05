@@ -13,8 +13,8 @@ function Task({ task, onComplete, onDelete, onStart, onUpdateLaps, activeTask, t
   const handleComplete = () => {
     if (!task.isComplete) {
       // Play the sound only when marking as complete
-      const audio = new Audio('/sound.mp3'); 
-      audio.play();
+     const audio = new Audio(`${process.env.PUBLIC_URL}/sound.mp3`);
+audio.play();
     }
     onComplete(task.id); 
   };
